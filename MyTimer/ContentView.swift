@@ -5,8 +5,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("タイマー画面")
+            ZStack {
+                Image("backgroundTimer")
+                    .resizable()
+                    .ignoresSafeArea()
+                // アスペクト比（縦横比）を維持して短辺基準に収まるようにする
+                    .scaledToFill()
+                VStack(spacing: 30.0) {
+                    Text("残り10秒")
+                        .font(.largeTitle)
+                }
             }
             // ナビゲーションにボタンを追加
             .toolbar {
