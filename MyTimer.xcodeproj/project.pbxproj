@@ -11,6 +11,7 @@
 		DA7F65452A4807B200CBD45D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F65442A4807B200CBD45D /* ContentView.swift */; };
 		DA7F65472A4807B400CBD45D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7F65462A4807B400CBD45D /* Assets.xcassets */; };
 		DA7F654A2A4807B400CBD45D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7F65492A4807B400CBD45D /* Preview Assets.xcassets */; };
+		DA7F65512A480C9600CBD45D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F65502A480C9600CBD45D /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DA7F65442A4807B200CBD45D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA7F65462A4807B400CBD45D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA7F65492A4807B400CBD45D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA7F65502A480C9600CBD45D /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				DA7F65422A4807B200CBD45D /* MyTimerApp.swift */,
 				DA7F65442A4807B200CBD45D /* ContentView.swift */,
+				DA7F65502A480C9600CBD45D /* SettingView.swift */,
 				DA7F65462A4807B400CBD45D /* Assets.xcassets */,
 				DA7F65482A4807B400CBD45D /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7F65512A480C9600CBD45D /* SettingView.swift in Sources */,
 				DA7F65452A4807B200CBD45D /* ContentView.swift in Sources */,
 				DA7F65432A4807B200CBD45D /* MyTimerApp.swift in Sources */,
 			);
