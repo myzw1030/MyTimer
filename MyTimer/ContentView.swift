@@ -14,6 +14,29 @@ struct ContentView: View {
                 VStack(spacing: 30.0) {
                     Text("残り10秒")
                         .font(.largeTitle)
+                    HStack {
+                        Button {
+                            
+                        } label: {
+                            Text("スタート")
+                                .font(.title)
+                                .foregroundColor(Color.white)
+                                .frame(width: 140, height: 140)
+                                .background(Color("startColor"))
+                                .clipShape(Circle())
+                        }
+                        
+                        Button {
+                            
+                        } label: {
+                            Text("ストップ")
+                                .font(.title)
+                                .foregroundColor(Color.white)
+                                .frame(width: 140, height: 140)
+                                .background(Color("stopColor"))
+                                .clipShape(Circle())
+                        }
+                    }
                 }
             }
             // ナビゲーションにボタンを追加
