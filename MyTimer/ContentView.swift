@@ -19,11 +19,11 @@ struct ContentView: View {
                 // アスペクト比（縦横比）を維持して短辺基準に収まるようにする
                     .scaledToFill()
                 VStack(spacing: 30.0) {
-                    Text("残り10秒")
+                    Text("残り\(timerValue - count)秒")
                         .font(.largeTitle)
                     HStack {
                         Button {
-                            
+                            startTimer()
                         } label: {
                             Text("スタート")
                                 .font(.title)
@@ -34,7 +34,14 @@ struct ContentView: View {
                         }
                         
                         Button {
-                            
+                            // timerHandlerをアンラップしてunwrapedTimerHandlerに代入
+                            if let unwrapedTimerHandler = timerHandler {
+                                // もしタイマーが、実行中だったら停止
+                                if unwrapedTimerHandler.isValid == true {
+                                    // タイマー停止
+                                    unwrapedTimerHandler.invalidate()
+                                }
+                            }
                         } label: {
                             Text("ストップ")
                                 .font(.title)
@@ -45,6 +52,11 @@ struct ContentView: View {
                         }
                     }
                 }
+            }
+            // 画面が表示される時に実行される
+            .onAppear {
+                // カウント（経過時間）の変数を初期化
+                count = 0
             }
             // ナビゲーションにボタンを追加
             .toolbar {
